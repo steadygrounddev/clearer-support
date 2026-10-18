@@ -1,8 +1,42 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Clearer Support
+description: Guides and answers for Clearer, the iOS app for context-aware screen time limits.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://support.getclearer.me
+
+plugins:
+  - jekyll-redirect-from
+
+exclude:
+  - PLAN.md
+  - permalinks.txt
+  - scripts/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
+collections:
+  guides:
+    permalink: "/:collection/:name/"
+    output: true
+  help:
+    permalink: "/:collection/:name/"
+    output: true
+
+just_the_docs:
+  collections:
+    guides:
+      name: Guides
+      nav_fold: true
+    help:
+      name: Help
+      nav_fold: true
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  Clearer: https://getclearer.me
+  Privacy Policy: https://getclearer.me/privacypolicy
+
+footer_content: >-
+  <a href="https://getclearer.me">Clearer</a> ·
+  <a href="https://getclearer.me/privacypolicy">Privacy Policy</a>
