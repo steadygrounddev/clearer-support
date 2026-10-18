@@ -40,3 +40,9 @@ aux_links:
 footer_content: >-
   <a href="https://getclearer.me">Clearer</a> ·
   <a href="https://getclearer.me/privacypolicy">Privacy Policy</a>
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
